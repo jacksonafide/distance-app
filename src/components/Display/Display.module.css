@@ -15,7 +15,7 @@
         align-items: center;
         padding-bottom: 60px;
     }
-    
+
     .MapBox {
         width: 85%;
     }
@@ -41,4 +41,11 @@
 
 .PopupDesc {
     font-size: 15px;
+}
+
+.Error {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 5px black;
+    white-space: pre-wrap;
 }

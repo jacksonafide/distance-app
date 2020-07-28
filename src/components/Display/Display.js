@@ -48,6 +48,7 @@ const display = (props) => {
 
     return (
         <div>
+            {props.error && <p className = {classes.Error}>{"Did not receive data back from server.\n Check if you entered cities correctly, if yes then likely there is some server issue."}</p>}
             {props.responseObj[0].licence === "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright" ?
                 <div className = {classes.ResultBox}>
                     <div className = {classes.DistanceBox}>

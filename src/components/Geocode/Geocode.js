@@ -7,6 +7,7 @@ const Geocode = () => {
     let [responseObj2, setResponseObj2] = useState({});
     let [city, setCity] = useState('');
     let [city2, setCity2] = useState('');
+    let [error, setError] = useState(false);
 
     const uriEncodedCity = encodeURIComponent(city);
     const uriEncodedCity2 = encodeURIComponent(city2);
@@ -22,10 +23,15 @@ const Geocode = () => {
                 fetch(`https://nominatim.openstreetmap.org/search?city=${uriEncodedCity}&format=json&limit=1`).then(response => response.json()),
                 fetch(`https://nominatim.openstreetmap.org/search?city=${uriEncodedCity2}&format=json&limit=1`).then(response => response.json())  
             ])
-            setResponseObj(c1[0])
-            setResponseObj2(c2[0])
+            if (c1[0].licence === undefined && c2[0].licence === undefined) {
+                throw new Error();
+            } else {
+                setResponseObj(c1[0])
+                setResponseObj2(c2[0])
+            }
         }
         catch (err) {
+            setError(true);
             console.log(err.message);
         }
     }
@@ -59,6 +65,7 @@ const Geocode = () => {
             </form>
             <Display
                 responseObj = {[responseObj, responseObj2]}
+                error = {error}
             />
         </div>
     )
