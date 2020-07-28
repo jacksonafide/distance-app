@@ -1,5 +1,5 @@
 .Header {
-    padding: 20px 20px 20px 25px;
+    padding: 10px 20px 10px 25px;
     background-color: #a6a6a6;
     text-align: left;
     color: white;
@@ -26,4 +26,16 @@
     text-shadow: 0 0 5px black;
     font-weight: bold;
     background-color: #a6a6a6;
+}
+
+.Title {
+    text-align: left;
+    line-height: 55px;
+    margin: 0px;
+}
+
+.Logo {
+    float: left;
+    padding-top: 5px;
+    margin-right: 20px;
 }
