@@ -1,0 +1,103 @@
+@media only all and (max-width: 800px) {
+    .Container {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .Title {
+        text-shadow: 0 0 5px black;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .Button {
+        margin: 10px 20px 0px 20px;
+    }
+}
+
+@media only all and (min-width: 800px) {
+    .Container {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .Title {
+        text-shadow: 0 0 5px black;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .Button {
+        margin: 45px 20px 20px 20px;
+    }
+}
+
+.TextInput {
+    font-size: large;
+    border: 1px solid #EEEEEE;
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+    text-shadow: 0 0 1px #fff, 0 0 1px rgba(0,0,0,0.6);
+    box-shadow: 0 0 5px grey;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin: 20px 20px 20px 20px;
+}
+
+.TextInput::after {
+    box-shadow: 0 5 15px grey;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.TextInput:focus {
+    outline: none;
+    border-color: #b3b3b3;
+    box-shadow: 0 0 5px black;
+    transform: scale(1.2, 1.2);
+}
+
+.TextInput:focus::after {
+    opacity: 1;
+}
+
+.Radio {
+    font-size: small;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.Button {
+    position: relative;
+    display: block;
+    padding: .5rem;
+    font-size: 1em;
+    background: #808080;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0 0 5px black;
+    font-weight: bold;
+    box-shadow: 0 0 10px grey;
+}

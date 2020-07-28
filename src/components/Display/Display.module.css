@@ -1,0 +1,44 @@
+@media only all and (min-width: 800px) {
+    .ResultBox {
+        border-radius: 5px;
+        border: 2px solid rgba(153, 153, 153, 0.25);
+        background-color: rgba(166, 166, 166, 0.2);
+        box-shadow: 0px 0px 30px rgb(100, 100, 100);
+        padding: 0px 30px 30px 30px;
+    }
+}
+
+@media only all and (max-width: 800px) {
+    .ResultBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+    
+    .MapBox {
+        width: 85%;
+    }
+}
+
+.MapBox {
+    border: 3px solid rgb(160, 160, 160);
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgb(160, 160, 160);
+}
+
+.DistanceBox {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 5px black;
+    padding: 0px 10px 0px 10px;
+}
+
+.PopupTitle {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.PopupDesc {
+    font-size: 15px;
+}
