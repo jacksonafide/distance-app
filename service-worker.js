@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/distance-app/precache-manifest.7003218c8bc9963d47a8ca8b26e8d8ba.js"
+  "/distance-app/precache-manifest.4501921080e1518f48e56b09e149f59e.js"
 );
 
 self.addEventListener('message', (event) => {
