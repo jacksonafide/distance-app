@@ -23,7 +23,7 @@ const Geocode = () => {
                 fetch(`https://nominatim.openstreetmap.org/search?city=${uriEncodedCity}&format=json&limit=1`).then(response => response.json()),
                 fetch(`https://nominatim.openstreetmap.org/search?city=${uriEncodedCity2}&format=json&limit=1`).then(response => response.json())  
             ])
-            if (c1[0].licence === undefined && c2[0].licence === undefined) {
+            if (c1[0].licence === undefined || c2[0].licence === undefined) {
                 throw new Error();
             } else {
                 setResponseObj(c1[0])
