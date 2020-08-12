@@ -1,3 +1,8 @@
+## Distance
+A simple app that calculates distance between two cities written in React.  
+It uses Nominatim API to geocode city names entered by user and OpenStreetMap API to display a map with cities marked.  
+You can see how it looks on [this site](https://jacksonafide.github.io/distance-app/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
