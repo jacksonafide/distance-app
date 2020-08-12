@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2bdcf4f7f3c266468364ad6184d99770",
+    "revision": "feffed814348955c7f8e6e7f310868fb",
     "url": "/distance-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/distance-app/static/css/2.7c35e809.chunk.css"
   },
   {
-    "revision": "bc6d8e1e10abb2334b01",
+    "revision": "649a449bed13e3c9694f",
     "url": "/distance-app/static/css/main.dcb1a404.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/distance-app/static/js/2.a863ab6e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bc6d8e1e10abb2334b01",
-    "url": "/distance-app/static/js/main.cce9a9ad.chunk.js"
+    "revision": "649a449bed13e3c9694f",
+    "url": "/distance-app/static/js/main.95c8f22e.chunk.js"
   },
   {
     "revision": "62e2101ab17f642ef884",
